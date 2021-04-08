@@ -1,0 +1,55 @@
+<!doctype html>
+
+<head>
+    <title>offshore.clothing</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<script>
+    var imgs = [
+        'img0.jpg','img1.jpg','img2.jpg','img3.jpg'
+    ];
+    
+    var slidecounter = 0;
+    
+     function change(){
+         slidecounter++;
+        document.getElementById('slider').src = imgs[slidecounter];
+         if (slidecounter > 3){
+             slidecounter = 0;
+         }
+             
+     }
+</script>
+<body>
+    <img id="slider" onclick="change()" src="img0.jfif">
+    <nav>
+        <a href="workingFiles/first%20page%20-%20Copy.psd"></a>
+        <a href="index.html">home</a>
+        <a href="index.html">shop</a>
+        <a href="index.html">info</a>
+        <a href="index.html">contact</a>
+    </nav>
+
+    <section>
+        
+        <div class="right">
+            <h1>Welcome to offshore clothing
+            (clothings styles show up)</h1>
+            <p></p>
+        </div>
+        <div class="left">
+            <h1>This page is for you to go to different spots in this website. shop is were you can put our clothing into your basket and pay for it. Info: is a little bit about our company and facts about us and how we started.
+            Contact: is were you can get hold of us if theres a problem with your purchase or what ever is your problem.</h1>
+            <p></p>
+        </div>
+
+
+    </section>
+    
+    
+
+
+
+</body>
