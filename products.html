@@ -1,0 +1,77 @@
+<!doctype html>
+
+<head>
+    <title>offshore.clothing</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+       function calculate(){
+           var data = document.getElementById("sizeData").value;
+           if(data <= 32){
+                document.getElementById("answer").innerHTML = 'your size is small';
+           }
+           else if(data <=44){
+                document.getElementById("answer").innerHTML = 'your size is medium';
+           }
+           else {
+               document.getElementById("answer").innerHTML = 'your size is large';
+           }
+       }
+    </script>
+
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png">
+        <a href="index.html">home</a>
+        <a href="products.html">products</a>
+        <a href="info.html">info</a>
+        <a href="contact.html">contact</a>
+    </nav>
+    
+    <div class="cal">
+        <h1>size calculator</h1>
+        <input type="number" name="size" id="sizeData">
+        <button type="submit" onclick="calculate">submit</button>
+        <p id="answer"></p>
+    </div>
+    
+    
+
+    <section>
+      <ul class="products">
+          <li>
+          <img src="images/light%20blue%20splatter%20long%20shirt.PNG">
+              <h2>light blue splatter long sleeve</h2>
+              <p>small $20
+                 meduim $25
+                 large $30</p>
+          </li>
+          <li>
+          <img src="images/dark%20blue%20splatter%20long%20shirt.PNG">
+              <h2>dark blue splatter long sleeve</h2>
+              <p>small $20
+                 meduim $25
+                 large $30</p>
+          </li>
+          <li>
+          <img src="images/light%20green%20splatter%20long%20shirt.PNG">
+              <h2>lime green splatter long sleeve</h2>
+              <p>small $20
+                 meduim $25
+                 large $30</p>
+          </li>
+          <li>
+          <img src="images/pink%20splatter%20long%20shirt.PNG">
+              <h2>pink splatter long sleeve</h2>
+              <p>small $20
+                 meduim $25
+                 large $30</p>
+          </li>
+        </ul>
+    </section>
+    
+    
+
+
+
+</body>
